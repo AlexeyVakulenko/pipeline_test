@@ -1,1 +1,13 @@
 #!groovy
+properties([disableConcurrentBuilds()])
+
+pipeline {
+  agent {
+    label 'master'
+  }
+  stages {
+    stage("First Step") {
+      
+    }
+  }
+}
