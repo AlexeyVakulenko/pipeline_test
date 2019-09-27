@@ -6,8 +6,10 @@ pipeline {
     label 'master'
   }
   stages {
-    stage("First Step") {
-      sh echo "Hello"
+    stage("First Stage") {
+      steps {
+        sh echo "Hello"
+      }
     }
   }
 }
